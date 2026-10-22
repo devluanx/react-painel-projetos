@@ -1,0 +1,28 @@
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.concluido {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.em-desenvolvimento {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.planejamento {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.outro-status {
+  background-color: #e5e7eb;
+  color: #374151;
+}

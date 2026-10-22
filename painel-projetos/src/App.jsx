@@ -1,3 +1,5 @@
+import StatusBadge from "./components/StatusBadge";
+
 const projetos = [
   {
     id: 1,
@@ -66,6 +68,10 @@ function App(){
   return(
     <>
     Lista de Projetos Desenvolvidos
+    <StatusBadge status="Concluído" />
+      <StatusBadge status="Em desenvolvimento" />
+      <StatusBadge status="Planejamento" />
+     
     </>
   )
 }
