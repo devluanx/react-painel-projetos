@@ -1,4 +1,5 @@
 import StatusBadge from "./components/StatusBadge";
+import TecnologiaTag from "./components/TecnologiaTag";
 
 const projetos = [
   {
@@ -71,6 +72,15 @@ function App(){
     <StatusBadge status="Concluído" />
       <StatusBadge status="Em desenvolvimento" />
       <StatusBadge status="Planejamento" />
+
+  <TecnologiaTag nome="React"/>
+  <TecnologiaTag nome="JavaScript"/>
+  <TecnologiaTag nome="PostgreSQL"/>
+  <TecnologiaTag nome="Node.js"/>
+  <TecnologiaTag nome="CSS"/>
+  <TecnologiaTag nome="HTML"/>
+  <TecnologiaTag nome="mySQL"/>
+  
      
     </>
   )

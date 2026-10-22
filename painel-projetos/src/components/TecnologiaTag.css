@@ -1,0 +1,17 @@
+.tecnologia-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.tecnologia-tag:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
