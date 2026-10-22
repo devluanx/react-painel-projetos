@@ -9,7 +9,7 @@ const projetos = [
     descricao:"Controle de produtos",
     responsavel: "Ana",
     status:"Concluído",
-    tecnologias:["React","Node.js","PostgreSQL"],
+    tecnologias:["React","Node.js","PostgreSQL","PHP"],
     destaque:true
   },
 
@@ -61,6 +61,15 @@ const projetos = [
     status:"Em desenvolvimento",
     tecnologias:["React","JavaScript","Node.js","CSS","mySQL"],
     destaque:true
+  },
+  {
+    id:7,
+    titulo:"Mini RPG",
+    descricao:"Mini RPG para se divertir",
+    responsavel:"Luan",
+    status:"Concluído",
+    tecnologias:["JavaScript","CSS","HTML"],
+    destaque: false
   }
 ]
 
@@ -103,7 +112,7 @@ const emDesenvolvimento = projetos.filter(
       ))}
     </div>
   </Secao>
-  <Secao titulo="Projetos da turma">
+  <Secao>
   <div className="projetos-lista">
   </div>
 </Secao>
