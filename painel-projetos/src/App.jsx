@@ -1,6 +1,4 @@
-import StatusBadge from "./components/StatusBadge";
-import TecnologiaTag from "./components/TecnologiaTag";
-
+import ProjetoCard from "./components/ProjetoCard";
 const projetos = [
   {
     id: 1,
@@ -68,18 +66,23 @@ const projetos = [
 function App(){
   return(
     <>
-    Lista de Projetos Desenvolvidos
-    <StatusBadge status="Concluído" />
-      <StatusBadge status="Em desenvolvimento" />
-      <StatusBadge status="Planejamento" />
+    <h1> Lista de Projetos Desenvolvidos</h1>
 
-  <TecnologiaTag nome="React"/>
-  <TecnologiaTag nome="JavaScript"/>
-  <TecnologiaTag nome="PostgreSQL"/>
-  <TecnologiaTag nome="Node.js"/>
-  <TecnologiaTag nome="CSS"/>
-  <TecnologiaTag nome="HTML"/>
-  <TecnologiaTag nome="mySQL"/>
+
+<section className="projetos-lista">
+  {projetos.map((projeto) => (
+    <ProjetoCard
+      key={projeto.id}
+      titulo={projeto.titulo}
+      descricao={projeto.descricao}
+      responsavel={projeto.responsavel}
+      status={projeto.status}
+      tecnologias={projeto.tecnologias}
+      destaque={projeto.destaque}
+    />
+  ))}
+</section>
+
   
      
     </>
