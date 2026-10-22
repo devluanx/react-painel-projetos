@@ -3,6 +3,7 @@ import StatusBadge from "./StatusBadge";
 import TecnologiaTag from "./TecnologiaTag";
 import "./ProjetoCard.css";
 
+
 function ProjetoCard({ titulo,descricao, responsavel, status, tecnologias,destaque}) {
   return (
     <article className={`projeto-card ${destaque ? "destaque" : ""}`}>

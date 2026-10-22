@@ -1,4 +1,7 @@
 import ProjetoCard from "./components/ProjetoCard";
+import Secao from "./components/Secao"
+import Resumo from "./components/Resumo";
+import Rodape from "./components/Rodape";
 const projetos = [
   {
     id: 1,
@@ -64,24 +67,48 @@ const projetos = [
 
 
 function App(){
+  const total = projetos.length;
+
+const concluidos = projetos.filter(
+  (projeto) => projeto.status === "Concluído"
+).length;
+
+const emDesenvolvimento = projetos.filter(
+  (projeto) => projeto.status === "Em desenvolvimento"
+).length;
   return(
     <>
-    <h1> Lista de Projetos Desenvolvidos</h1>
+    <h1>Lista de Projetos Desenvolvidos</h1>
 
-
-<section className="projetos-lista">
-  {projetos.map((projeto) => (
-    <ProjetoCard
-      key={projeto.id}
-      titulo={projeto.titulo}
-      descricao={projeto.descricao}
-      responsavel={projeto.responsavel}
-      status={projeto.status}
-      tecnologias={projeto.tecnologias}
-      destaque={projeto.destaque}
+  <Secao titulo="Resumo do painel">
+    <Resumo
+      total={total}
+      concluidos={concluidos}
+      emDesenvolvimento={emDesenvolvimento}
     />
-  ))}
-</section>
+  </Secao>
+
+  <Secao titulo="Projetos da turma">
+    <div className="projetos-lista">
+      {projetos.map((projeto) => (
+        <ProjetoCard
+          key={projeto.id}
+          titulo={projeto.titulo}
+          descricao={projeto.descricao}
+          responsavel={projeto.responsavel}
+          status={projeto.status}
+          tecnologias={projeto.tecnologias}
+          destaque={projeto.destaque}
+        />
+      ))}
+    </div>
+  </Secao>
+  <Secao titulo="Projetos da turma">
+  <div className="projetos-lista">
+  </div>
+</Secao>
+
+<Rodape />
 
   
      

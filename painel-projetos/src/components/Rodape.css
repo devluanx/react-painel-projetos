@@ -1,0 +1,45 @@
+
+.rodape {
+  margin-top: 60px;
+  padding: 35px 20px;
+  background: #1e3a8a;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.rodape h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.rodape p {
+  margin: 8px 0;
+  color: #dbeafe;
+  font-size: 14px;
+}
+
+.rodape span {
+  display: block;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #bfdbfe;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .rodape {
+    margin-top: 35px;
+    padding: 28px 15px;
+  }
+
+  .rodape h3 {
+    font-size: 19px;
+  }
+
+  .rodape p {
+    font-size: 13px;
+  }
+}
